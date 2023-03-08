@@ -83,13 +83,13 @@ export const NavBar = () => {
                 <AnimatePresence>                
                 {
                     nav&&
-                    <motion.div variants={navBarVariants} animate='open' exit='close' className='absolute left-0 top-[80px] px-3 w-full bg-zinc-300 dark:bg-zinc-800 dark:text-zinc-300'>
+                    <motion.div variants={navBarVariants} animate='open' exit='close' className='absolute h-screen left-0 top-[80px] px-3 w-full bg-zinc-300 dark:bg-zinc-800 dark:text-zinc-300'>
                         <ul className='pb-5'>
-                        <li className='border-b-2 border-zinc-400'><a href="#">Home</a></li>
-                        <li className='border-b-2 border-zinc-400'><a href="#About">About</a></li>
-                        <li className='border-b-2 border-zinc-400'><a href="#Support">Support</a></li>
-                        <li className='border-b-2 border-zinc-400'><a href="#Platform">Platforms</a></li>
-                        <li className='border-b-2 border-zinc-400'><a href="#Pricing">Pricing</a></li>
+                        <li className='border-b-2 border-zinc-400'><a onClick={()=>setNav(false)} href="#">Home</a></li>
+                        <li className='border-b-2 border-zinc-400'><a onClick={()=>setNav(false)} href="#About">About</a></li>
+                        <li className='border-b-2 border-zinc-400'><a onClick={()=>setNav(false)} href="#Support">Support</a></li>
+                        <li className='border-b-2 border-zinc-400'><a onClick={()=>setNav(false)} href="#Platform">Platforms</a></li>
+                        <li className='border-b-2 border-zinc-400'><a onClick={()=>setNav(false)} href="#Pricing">Pricing</a></li>
                         </ul>
                         <div className='flex flex-col pb-5'>
                         <AnimatePresence initial={false} mode='wait'>

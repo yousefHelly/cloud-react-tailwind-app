@@ -48,9 +48,9 @@ export const Footer = () => {
             <div className='flex flex-col gap-2  text-slate-300'>
             <p>The latest news, articles, and resources, sent to your inbox weekly.</p>
             </div>
-            <div className='flex'>
-                <input type="text" className='py-2 px-3 border rounded rounded-r-none focus-within:outline-none text-black dark:text-slate-200 dark:bg-zinc-800 dark:border-indigo-900' placeholder='Enter your Email' />
-                <button className='rounded-l-none px-3'>Subscribe</button>
+            <div className='flex flex-col md:flex-row'>
+                <input type="text" className='py-2 px-3 border rounded rounded-b-none md:rounded-bl-[0.25rem] md:rounded-r-none focus-within:outline-none text-black dark:text-slate-200 dark:bg-zinc-800 dark:border-indigo-900' placeholder='Enter your Email' />
+                <button className='rounded rounded-t-none md:rounded-tr-[0.25rem] md:rounded-l-none py-2 md:px-3'>Subscribe</button>
             </div>
         </div>
         </div>
